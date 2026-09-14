@@ -591,11 +591,11 @@ def generate_caption(idx: int, desc: str, url: str, credit_name: str,
     topic = topic_name or desc
     batch = batch_name or "Batch"
     return (
-        f"[{icon}]Vid Id : {vid_id}\n"
-        f"Video Title : {title}\n"
-        f"Topic Name : {topic}\n"
-        f"Batch Name : {batch}\n\n"
-        f"Downloadd By ➤ {credit_name}"
+        f"[{icon}]Index : {vid_id}\n"
+        f"Title : {title}\n"
+        f"Topic : {topic}\n"
+        f"Batch : {batch}\n\n"
+        f"Extracted By : {credit_name}"
     )
 
 
@@ -881,7 +881,7 @@ async def process_batch(
     # ── Summary ─────────────────────────────────
     await bot.send_message(
         chat_id,
-        f"✅ <b>Batch Complete!</b>\n\n"
+        f"✅ <b>Done</b>\n\n"
         f"• Total  : {total}\n"
         f"• Success: {success_cnt}\n"
         f"• Failed : {fail_cnt}",
@@ -890,7 +890,7 @@ async def process_batch(
     # ── Index (WhatsApp style) ───────────────────
     if index_lines:
         ts = datetime.datetime.now().strftime("%d/%m/%Y %H:%M")
-        index_header = f"[{ts}] 𝓐𝓭𝓲𝓽𝔂𝓪: 📑 Topics covered in this Batch:\n\n"
+        index_header = f"[{ts}] MAMA: 📑 Topics covered in this Batch:\n\n"
         index_body = "\n".join(index_lines)
         full_index = index_header + index_body
         for chunk_start in range(0, len(full_index), 4000):
