@@ -11,7 +11,7 @@ API_HASH = os.environ.get("API_HASH", "your_api_hash_here")
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN") or os.getenv("BOT_TOKEN", "8762166731:AAEUa-CEhKRLsfWGDdSk4Gau_ujJbMHgcFs")
 
 # Owner ID and Authorized Users
-OWNER_ID = int(os.environ.get("OWNER_ID", "123456789"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "8701689281"))
 
 # Authorized users stored in memory (in a real app, use a database)
 AUTH_USERS = [OWNER_ID]
