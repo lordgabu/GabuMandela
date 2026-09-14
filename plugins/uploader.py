@@ -1023,7 +1023,7 @@ async def handle_document(client: Client, message: Message):
                     batch_name = parts[1] if len(parts) > 2 else (parts[0] if len(parts) > 0 else "Unknown")
                     vid_id = f"{i+1:03d}"
                     
-                    custom_caption = f"""[🎥] **Vid Id** : `{vid_id}`\n**Video Title** : `{video_title}`\n**Topic Name** : `{topic_name}`\n**Batch Name** : `{batch_name}`\n\n**Extracted By** ➢ Clean Leach Bot"""
+                    custom_caption = f"""[🎥] **Index** : `{vid_id}`\n**Title** : `{video_title}`\n**Topic** : `{topic_name}`\n**Batch** : `{batch_name}`\n\n**Extracted By** : TERE PAPA"""
                     
                     # Extract Metadata
                     thumb_path = f"{mp4_path}.jpg"
