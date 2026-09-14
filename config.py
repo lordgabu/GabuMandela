@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Telegram API credentials from my.telegram.org
-API_ID = int(os.environ.get("API_ID", "1234567"))
-API_HASH = os.environ.get("API_HASH", "your_api_hash_here")
+API_ID = int(os.environ.get("API_ID", "5910854772"))
+API_HASH = os.environ.get("API_HASH", "5910854772eef58bab25ec9aa78a9742")
 
 # Bot Token from @BotFather
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN") or os.getenv("BOT_TOKEN", "8762166731:AAEUa-CEhKRLsfWGDdSk4Gau_ujJbMHgcFs")
